@@ -10,15 +10,11 @@ const isTestMode = () => {
 };
 
 // 自动更新
-export const getUpdateCheckUrl = () => isTestMode()
-  ? 'https://api-overmind.youdao.com/openapi/get/luna/hardware/lobsterai/test/update'
-  : 'https://api-overmind.youdao.com/openapi/get/luna/hardware/lobsterai/prod/update';
+export const getUpdateCheckUrl = () => '';
 
-export const getFallbackDownloadUrl = () => isTestMode()
-  ? 'https://lobsterai.inner.youdao.com/#/download-list'
-  : 'https://lobsterai.youdao.com/#/download-list';
+export const getFallbackDownloadUrl = () => '';
 
 // Skill 商店
 export const getSkillStoreUrl = () => isTestMode()
-  ? 'https://api-overmind.youdao.com/openapi/get/luna/hardware/lobsterai/test/skill-store'
+  ? 'https://api-overmind.youdao.com/openapi/get/luna/hardware/lobsterai/prod/skill-store'
   : 'https://api-overmind.youdao.com/openapi/get/luna/hardware/lobsterai/prod/skill-store';

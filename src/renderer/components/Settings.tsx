@@ -196,9 +196,9 @@ const normalizeBaseUrl = (baseUrl: string): string => baseUrl.trim().replace(/\/
 const normalizeApiFormat = (value: unknown): 'anthropic' | 'openai' => (
   value === 'openai' ? 'openai' : 'anthropic'
 );
-const ABOUT_CONTACT_EMAIL = 'lobsterai.project@rd.netease.com';
-const ABOUT_USER_MANUAL_URL = 'https://lobsterai.youdao.com/#/docs/lobsterai_user_manual';
-const ABOUT_SERVICE_TERMS_URL = 'https://c.youdao.com/dict/hardware/lobsterai/lobsterai_service.html';
+const ABOUT_CONTACT_EMAIL = '#';
+const ABOUT_USER_MANUAL_URL = '#';
+const ABOUT_SERVICE_TERMS_URL = '#';
 
 const copyTextFallback = (text: string): boolean => {
   const textarea = document.createElement('textarea');
